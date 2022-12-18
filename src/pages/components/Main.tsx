@@ -199,10 +199,9 @@ export default function MainTemp() {
                 variant="gradient"
                 gradient={{ from: 'yellow', to: 'orange' }}
               >
-                Meetings
+                熱量
               </Text>{' '}
-              platform for young medical professionals working in intensive care
-              medicine in Japan.
+              が集結する。
             </Title>
 
             <Text className={classes.description} mt={30}>
