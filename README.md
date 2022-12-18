@@ -1,11 +1,11 @@
-# next-tailwind-mantine
+# u35-app
 
 [![Last Commit](https://img.shields.io/github/last-commit/yktt-nuane/next-tailwind-mantine)](https://github.com/yktt-nuane/next-tailwind-mantine/graphs/commit-activity)
 [![CI](https://github.com/yktt-nuane/next-tailwind-mantine/actions/workflows/ci.yml/badge.svg)](https://github.com/yktt-nuane/next-tailwind-mantine/actions/workflows/ci.yml)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-- [next-tailwind-mantine](#next-tailwind-mantine)
+- [u35-app](#u35-app)
   - [Prerequisites](#prerequisites)
   - [How to](#how-to)
     - [Setup](#setup)
