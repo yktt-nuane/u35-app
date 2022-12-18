@@ -32,7 +32,7 @@ const useStyles = createStyles((theme) => ({
   },
 }))
 
-export function FooterTemp() {
+export default function FooterTemp() {
   const { classes } = useStyles()
 
   return (

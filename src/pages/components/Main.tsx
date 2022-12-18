@@ -73,7 +73,7 @@ const useStyles = createStyles((theme) => ({
   },
 }))
 
-export function MainTemp() {
+export default function MainTemp() {
   const { classes } = useStyles()
   return (
     <div className={classes.root}>
