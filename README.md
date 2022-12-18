@@ -28,6 +28,9 @@
   - Prettier
   - Stylelint
   - Vitest
+  - Tailwind CSS
+  - Mantine
+  - Next-Axiom
 
 ## How to
 
