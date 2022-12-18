@@ -1,3 +1,5 @@
+import MainSub from './components/MainSub'
+
 import FooterTemp from '@/pages/components/Footer'
 import HeaderTemp from '@/pages/components/Header'
 import MainTemp from '@/pages/components/Main'
@@ -10,6 +12,7 @@ export default function Home() {
     <>
       <HeaderTemp />
       <MainTemp />
+      <MainSub />
       <FooterTemp />
     </>
   )

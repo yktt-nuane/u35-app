@@ -1,9 +1,6 @@
 import { createStyles, Container, Group, ActionIcon } from '@mantine/core'
-import {
-  IconBrandTwitter,
-  IconBrandYoutube,
-  IconBrandInstagram,
-} from '@tabler/icons'
+import { IconBrandTwitter, IconBrandGithub } from '@tabler/icons'
+import Link from 'next/link'
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -38,15 +35,17 @@ export default function FooterTemp() {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
+        <p>© 2022 Tatsuro Yokoyama All rights reserved.</p>
         <Group spacing={0} className={classes.links} position="right" noWrap>
           <ActionIcon size="lg">
-            <IconBrandTwitter size={18} stroke={1.5} />
+            <Link href="https://twitter.com/yokotatsu75">
+              <IconBrandTwitter size={18} stroke={1.5}></IconBrandTwitter>
+            </Link>
           </ActionIcon>
           <ActionIcon size="lg">
-            <IconBrandYoutube size={18} stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg">
-            <IconBrandInstagram size={18} stroke={1.5} />
+            <Link href="https://github.com/yktt-nuane">
+              <IconBrandGithub size={18} stroke={1.5} />
+            </Link>
           </ActionIcon>
         </Group>
       </Container>
