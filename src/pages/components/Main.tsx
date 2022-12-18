@@ -1,4 +1,13 @@
-import { createStyles, Container, Title, Text, Button } from '@mantine/core'
+import {
+  createStyles,
+  Container,
+  Title,
+  Text,
+  Button,
+  Center,
+  Flex,
+} from '@mantine/core'
+import { IconBrandTwitter, IconBrandYoutube } from '@tabler/icons'
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -6,7 +15,7 @@ const useStyles = createStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundImage:
-      'linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80)',
+      'linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), url(/top.jpg)',
     paddingTop: theme.spacing.xl * 3,
     paddingBottom: theme.spacing.xl * 3,
   },
@@ -68,10 +77,112 @@ const useStyles = createStyles((theme) => ({
     fontSize: 22,
 
     [theme.fn.smallerThan('md')]: {
-      width: '100%',
+      width: '50%',
     },
   },
 }))
+
+function TwitterICU2023() {
+  return (
+    <Center pt={80}>
+      <Button
+        component="a"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://twitter.com/jsicm50_2023?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3Ajsicm50_2023%7Ctwcon%5Es2"
+        leftIcon={<IconBrandTwitter size={18} />}
+        styles={(theme) => ({
+          root: {
+            backgroundColor: 'white',
+            color: 'black',
+            border: 0,
+            height: 42,
+            paddingLeft: 20,
+            paddingRight: 20,
+
+            '&:hover': {
+              backgroundColor: theme.fn.darken('#00acee', 0.05),
+            },
+          },
+
+          leftIcon: {
+            marginRight: 15,
+          },
+        })}
+      >
+        第50回集中治療学会
+      </Button>
+    </Center>
+  )
+}
+
+function TwitterDancingER() {
+  return (
+    <Center pt={80}>
+      <Button
+        component="a"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://twitter.com/houseloveryuki?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+        leftIcon={<IconBrandTwitter size={18} />}
+        styles={(theme) => ({
+          root: {
+            backgroundColor: 'white',
+            color: 'black',
+            border: 0,
+            height: 42,
+            paddingLeft: 20,
+            paddingRight: 20,
+
+            '&:hover': {
+              backgroundColor: theme.fn.darken('#00acee', 0.05),
+            },
+          },
+
+          leftIcon: {
+            marginRight: 15,
+          },
+        })}
+      >
+        踊る救急医
+      </Button>
+    </Center>
+  )
+}
+
+function YouTubeHoshino() {
+  return (
+    <Center pt={80}>
+      <Button
+        component="a"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.youtube.com/@user-fy9vv3cw8s"
+        leftIcon={<IconBrandYoutube size={18} />}
+        styles={(theme) => ({
+          root: {
+            backgroundColor: 'white',
+            color: 'black',
+            border: 0,
+            height: 42,
+            paddingLeft: 20,
+            paddingRight: 20,
+
+            '&:hover': {
+              backgroundColor: theme.fn.darken('#00acee', 0.05),
+            },
+          },
+
+          leftIcon: {
+            marginRight: 15,
+          },
+        })}
+      >
+        ハルジローのオンライン看護学院
+      </Button>
+    </Center>
+  )
+}
 
 export default function MainTemp() {
   const { classes } = useStyles()
@@ -86,12 +197,12 @@ export default function MainTemp() {
                 component="span"
                 inherit
                 variant="gradient"
-                gradient={{ from: 'pink', to: 'yellow' }}
+                gradient={{ from: 'yellow', to: 'orange' }}
               >
-                Meeting
+                Meetings
               </Text>{' '}
-              of young medical professionals of intensive care medicine in
-              Japan.
+              platform for young medical professionals working in intensive care
+              medicine in Japan.
             </Title>
 
             <Text className={classes.description} mt={30}>
@@ -99,16 +210,15 @@ export default function MainTemp() {
               professionals working in the intensive care field. This is the
               platform that makes it possible.
             </Text>
-
-            <Button
-              variant="gradient"
-              gradient={{ from: 'pink', to: 'yellow' }}
-              size="xl"
-              className={classes.control}
-              mt={40}
+            <Flex
+              direction={{ base: 'column', sm: 'row' }}
+              gap={{ base: 'sm', sm: 'lg' }}
+              justify={{ sm: 'center' }}
             >
-              Join
-            </Button>
+              <TwitterICU2023 />
+              <TwitterDancingER />
+              <YouTubeHoshino />
+            </Flex>
           </div>
         </div>
       </Container>

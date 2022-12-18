@@ -101,32 +101,32 @@ const mockdata = [
   {
     icon: IconCode,
     title: 'Open source',
-    description: 'This Pokémon’s cry is very loud and distracting',
+    description: 'AAA',
   },
   {
     icon: IconCoin,
     title: 'Free for everyone',
-    description: 'The fluid of Smeargle’s tail secretions changes',
+    description: 'BBB',
   },
   {
     icon: IconBook,
     title: 'Documentation',
-    description: 'Yanma is capable of seeing 360 degrees without',
+    description: 'CCC',
   },
   {
     icon: IconFingerprint,
     title: 'Security',
-    description: 'The shell’s rounded shape and the grooves on its.',
+    description: 'DDD',
   },
   {
     icon: IconChartPie3,
     title: 'Analytics',
-    description: 'This Pokémon uses its flying ability to quickly chase',
+    description: 'EEE',
   },
   {
     icon: IconNotification,
     title: 'Notifications',
-    description: 'Combusken battles with the intensely hot flames it spews',
+    description: 'FFF',
   },
 ]
 
