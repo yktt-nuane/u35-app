@@ -1,13 +1,17 @@
-import { Button, Center } from '@mantine/core'
+import { MainTemp } from './components/Main'
+
+import { FooterTemp } from '@/pages/components/Footer'
+import { HeaderTemp } from '@/pages/components/Header'
+
 import { log } from 'next-axiom'
 
 export default function Home() {
   log.debug('Home')
   return (
     <>
-      <Center style={{ width: 400, height: 200 }}>
-        <Button>Hello</Button>
-      </Center>
+      <HeaderTemp />
+      <MainTemp />
+      <FooterTemp />
     </>
   )
 }
