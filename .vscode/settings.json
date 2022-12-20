@@ -8,5 +8,12 @@
   "css.validate": false,
   "scss.validate": false,
   "files.insertFinalNewline": true,
-  "cSpell.words": ["Tatsuro", "Yokoyama", "stylelint", "mantine", "tabler"]
+  "cSpell.words": [
+    "Tatsuro",
+    "Yokoyama",
+    "stylelint",
+    "mantine",
+    "tabler",
+    "Niseko"
+  ]
 }
