@@ -1,4 +1,11 @@
-import { createStyles, Container, Button, Center, Flex } from '@mantine/core'
+import {
+  createStyles,
+  Container,
+  Button,
+  Center,
+  Flex,
+  Loader,
+} from '@mantine/core'
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -84,7 +91,7 @@ function TwitterICU2023() {
         target="_blank"
         rel="noreferrer"
       >
-        第50回集中治療学会学術集会
+        <Loader color="white" />
       </Button>
     </Center>
   )
@@ -103,7 +110,7 @@ function TwitterNiseko() {
         target="_blank"
         rel="noreferrer"
       >
-        サマーキャンプ_in_NISEKO
+        <Loader color="white" />
       </Button>
     </Center>
   )
@@ -122,7 +129,7 @@ function TwitterDancingER() {
         target="_blank"
         rel="noreferrer"
       >
-        踊る救急医
+        <Loader color="white" />
       </Button>
     </Center>
   )
