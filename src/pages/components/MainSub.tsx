@@ -80,7 +80,7 @@ export default function MainSub() {
           <div
             style={{ maxWidth: '30%', marginLeft: 'auto', marginRight: 'auto' }}
           >
-            <Image alt="flyer" src="/u35.png" />
+            <Image alt="flyer" src="/50jsicm.jpg" />
           </div>
           <div
             style={{ maxWidth: '30%', marginLeft: 'auto', marginRight: 'auto' }}
