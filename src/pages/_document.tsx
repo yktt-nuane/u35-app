@@ -9,7 +9,9 @@ export default class _Document extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+          <script async src="https://platform.twitter.com/widgets.js" />
+        </Head>
         <body>
           <Main />
           <NextScript />
