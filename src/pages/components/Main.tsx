@@ -116,6 +116,40 @@ function TwitterICU2023() {
   )
 }
 
+function TwitterNiseko() {
+  return (
+    <Center pt={80}>
+      <Button
+        component="a"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://twitter.com/scNISEKOJSICM50"
+        leftIcon={<IconBrandTwitter size={18} />}
+        styles={(theme) => ({
+          root: {
+            backgroundColor: 'white',
+            color: 'black',
+            border: 0,
+            height: 42,
+            paddingLeft: 20,
+            paddingRight: 20,
+
+            '&:hover': {
+              backgroundColor: theme.fn.darken('#00acee', 0.05),
+            },
+          },
+
+          leftIcon: {
+            marginRight: 15,
+          },
+        })}
+      >
+        ニセコサマーキャンプ
+      </Button>
+    </Center>
+  )
+}
+
 function TwitterDancingER() {
   return (
     <Center pt={80}>
@@ -215,6 +249,7 @@ export default function MainTemp() {
               justify={{ sm: 'center' }}
             >
               <TwitterICU2023 />
+              <TwitterNiseko />
               <TwitterDancingER />
               <YouTubeHoshino />
             </Flex>
