@@ -1,4 +1,5 @@
 import MainSub from './components/MainSub'
+import TweetsTemp from './components/Tweets'
 
 import FooterTemp from '@/pages/components/Footer'
 import MainTemp from '@/pages/components/Main'
@@ -11,6 +12,7 @@ export default function Home() {
     <>
       <MainTemp />
       <MainSub />
+      <TweetsTemp />
       <FooterTemp />
     </>
   )

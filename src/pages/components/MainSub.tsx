@@ -6,7 +6,7 @@ const useStyles = createStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     paddingTop: theme.spacing.xl * 3,
-    paddingBottom: theme.spacing.xl * 3,
+    paddingBottom: theme.spacing.xl * 0,
   },
 
   inner: {
@@ -26,7 +26,7 @@ const useStyles = createStyles((theme) => ({
 
   content: {
     paddingTop: theme.spacing.xl * 2,
-    paddingBottom: theme.spacing.xl * 2,
+    paddingBottom: theme.spacing.xl * 0,
     marginRight: theme.spacing.xl * 3,
 
     [theme.fn.smallerThan('md')]: {
