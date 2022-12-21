@@ -86,7 +86,7 @@ const useStyles = createStyles((theme) => ({
 
 function TwitterICU2023() {
   return (
-    <Center pt={80}>
+    <Center pt={20}>
       <Button
         component="a"
         target="_blank"
@@ -120,7 +120,7 @@ function TwitterICU2023() {
 
 function TwitterNiseko() {
   return (
-    <Center pt={80}>
+    <Center pt={20}>
       <Button
         component="a"
         target="_blank"
@@ -154,7 +154,7 @@ function TwitterNiseko() {
 
 function TwitterDancingER() {
   return (
-    <Center pt={80}>
+    <Center pt={20}>
       <Button
         component="a"
         target="_blank"
@@ -188,7 +188,7 @@ function TwitterDancingER() {
 
 function YouTubeHoshino() {
   return (
-    <Center pt={80}>
+    <Center pt={20}>
       <Button
         component="a"
         target="_blank"
@@ -264,20 +264,30 @@ export default function MainTemp() {
               direction={{ base: 'column', sm: 'row' }}
               gap={{ base: 'sm', sm: 'lg' }}
               justify={{ sm: 'center' }}
+              mt={40}
             >
               <TwitterICU2023 />
               <TwitterNiseko />
-              <TwitterDancingER />
-              <YouTubeHoshino />
             </Flex>
-            <Text className={classes.description} mt={30} ml={50}>
+            <Text className={classes.description} mt={30} ml={100}>
               第50回集中治療学会は
               <strong>{JsicmCountDown}</strong>です。
             </Text>
-            <Text className={classes.description} mt={10} ml={50}>
+            <Text className={classes.description} mt={10} ml={100}>
               サマーキャンプ in NISEKOは
               <strong>{NisekoCountDown}</strong>です。
             </Text>
+            <Text className={classes.description} mt={30} ml={50}>
+              集中治療学会 U-35 メンバー
+            </Text>
+            <Flex
+              direction={{ base: 'column', sm: 'row' }}
+              gap={{ base: 'sm', sm: 'lg' }}
+              justify={{ sm: 'center' }}
+            >
+              <TwitterDancingER />
+              <YouTubeHoshino />
+            </Flex>
           </div>
         </div>
       </Container>

@@ -84,8 +84,8 @@ function TwitterICU2023() {
       <Button
         component="a"
         className="twitter-timeline"
-        data-height="400"
-        data-width="300"
+        data-height="500"
+        data-width="500"
         data-theme="dark"
         href="https://twitter.com/jsicm50_2023?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3Ajsicm50_2023%7Ctwcon%5Es2"
         target="_blank"
@@ -103,29 +103,10 @@ function TwitterNiseko() {
       <Button
         component="a"
         className="twitter-timeline"
-        data-height="400"
-        data-width="300"
+        data-height="500"
+        data-width="500"
         data-theme="dark"
         href="https://twitter.com/scNISEKOJSICM50"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <Loader color="white" />
-      </Button>
-    </Center>
-  )
-}
-
-function TwitterDancingER() {
-  return (
-    <Center pt={80}>
-      <Button
-        component="a"
-        className="twitter-timeline"
-        data-height="400"
-        data-width="300"
-        data-theme="dark"
-        href="https://twitter.com/houseloveryuki?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
         target="_blank"
         rel="noreferrer"
       >
@@ -149,7 +130,6 @@ export default function TweetsTemp() {
             >
               <TwitterICU2023 />
               <TwitterNiseko />
-              <TwitterDancingER />
             </Flex>
           </div>
         </div>
