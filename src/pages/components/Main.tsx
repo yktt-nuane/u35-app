@@ -8,6 +8,8 @@ import {
   Flex,
 } from '@mantine/core'
 import { IconBrandTwitter, IconBrandYoutube } from '@tabler/icons'
+import { formatDistanceToNowStrict } from 'date-fns'
+import ja from 'date-fns/locale/ja'
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -89,7 +91,7 @@ function TwitterICU2023() {
         component="a"
         target="_blank"
         rel="noopener noreferrer"
-        href="https://twitter.com/jsicm50_2023?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3Ajsicm50_2023%7Ctwcon%5Es2"
+        href="https://twitter.com/JsicmDay50_2023?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3AJsicmDay50_2023%7Ctwcon%5Es2"
         leftIcon={<IconBrandTwitter size={18} />}
         styles={(theme) => ({
           root: {
@@ -123,7 +125,7 @@ function TwitterNiseko() {
         component="a"
         target="_blank"
         rel="noopener noreferrer"
-        href="https://twitter.com/scNISEKOJSICM50"
+        href="https://twitter.com/scNISEKOJsicmDay50"
         leftIcon={<IconBrandTwitter size={18} />}
         styles={(theme) => ({
           root: {
@@ -218,6 +220,21 @@ function YouTubeHoshino() {
   )
 }
 
+const JsicmDay = new Date(2023, 3, 2)
+const NisekoDay = new Date(2023, 8, 25)
+
+const JsicmCountDown = formatDistanceToNowStrict(JsicmDay, {
+  addSuffix: true,
+  locale: ja,
+  unit: 'day',
+})
+
+const NisekoCountDown = formatDistanceToNowStrict(NisekoDay, {
+  addSuffix: true,
+  locale: ja,
+  unit: 'day',
+})
+
 export default function MainTemp() {
   const { classes } = useStyles()
   return (
@@ -253,6 +270,14 @@ export default function MainTemp() {
               <TwitterDancingER />
               <YouTubeHoshino />
             </Flex>
+            <Text className={classes.description} mt={30} ml={50}>
+              第50回集中治療学会は
+              <strong>{JsicmCountDown}</strong>です。
+            </Text>
+            <Text className={classes.description} mt={10} ml={50}>
+              サマーキャンプ in NISEKOは
+              <strong>{NisekoCountDown}</strong>です。
+            </Text>
           </div>
         </div>
       </Container>
