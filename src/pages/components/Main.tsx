@@ -91,7 +91,7 @@ function TwitterICU2023() {
         component="a"
         target="_blank"
         rel="noopener noreferrer"
-        href="https://twitter.com/JsicmDay50_2023?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3AJsicmDay50_2023%7Ctwcon%5Es2"
+        href="https://twitter.com/jsicm50_2023"
         leftIcon={<IconBrandTwitter size={18} />}
         styles={(theme) => ({
           root: {
@@ -125,7 +125,7 @@ function TwitterNiseko() {
         component="a"
         target="_blank"
         rel="noopener noreferrer"
-        href="https://twitter.com/scNISEKOJsicmDay50"
+        href="https://twitter.com/scNISEKOJSICM50"
         leftIcon={<IconBrandTwitter size={18} />}
         styles={(theme) => ({
           root: {
