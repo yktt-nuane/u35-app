@@ -364,13 +364,24 @@ export default function MainTemp() {
             </Title>
 
             <Text className={classes.description} mt={30}>
-              We value the cross-sectional connections between young medical
-              professionals working in the intensive care field. This is the
-              platform that makes it possible.
+              <Text component="span" fw={700} fz="lg">
+                JICAP
+              </Text>{' '}
+              (Japanese Intensive Care Advertising Platform)
             </Text>
-            <Text className={classes.description} mt={50} ml={0}>
-              <Text fw={700} fz="lg" td="underline">
+            <Text className={classes.description} mt={30} ml={0}>
+              <Text fw={700} fz="lg">
                 第50回集中治療学会
+                <Text
+                  component="span"
+                  fw={700}
+                  fz="lg"
+                  inherit
+                  variant="gradient"
+                  gradient={{ from: 'yellow', to: 'orange' }}
+                >
+                  （{JsicmCountDown}）
+                </Text>
               </Text>
             </Text>
             <Flex
@@ -382,23 +393,20 @@ export default function MainTemp() {
               <TwitterICU2023 />
               <HomeICU2023 />
             </Flex>
-            <Text className={classes.description} mt={10} ml={0}>
-              第50回集中治療学会は
-              <Text
-                component="span"
-                fw={700}
-                fz="lg"
-                inherit
-                variant="gradient"
-                gradient={{ from: 'yellow', to: 'orange' }}
-              >
-                {JsicmCountDown}
-              </Text>
-              です。
-            </Text>
+
             <Text className={classes.description} mt={30} ml={0}>
-              <Text fw={700} fz="lg" td="underline">
+              <Text fw={700} fz="lg">
                 ニセコサマーキャンプ
+                <Text
+                  component="span"
+                  fw={700}
+                  fz="lg"
+                  inherit
+                  variant="gradient"
+                  gradient={{ from: 'yellow', to: 'orange' }}
+                >
+                  （{NisekoCountDown}）
+                </Text>
               </Text>
             </Text>
             <Flex
@@ -411,23 +419,8 @@ export default function MainTemp() {
               <InstagramNiseko />
               <FacebookNiseko />
             </Flex>
-
-            <Text className={classes.description} mt={10} ml={0}>
-              サマーキャンプ in NISEKOは
-              <Text
-                component="span"
-                fw={700}
-                fz="lg"
-                inherit
-                variant="gradient"
-                gradient={{ from: 'yellow', to: 'orange' }}
-              >
-                {NisekoCountDown}
-              </Text>
-              です。
-            </Text>
             <Text className={classes.description} mt={30} ml={0}>
-              <Text fw={700} fz="lg" td="underline">
+              <Text fw={700} fz="lg">
                 集中治療学会 U-35 メンバー
               </Text>
             </Text>
@@ -440,6 +433,13 @@ export default function MainTemp() {
               <YouTubeHoshino />
             </Flex>
           </div>
+        </div>
+        <div>
+          <Text className={classes.description} mt={20}>
+            ＊現時点で個人が運営するサイトです。
+            <br />
+            ＊アカウントから発信される情報を保証するものではありません。
+          </Text>
         </div>
       </Container>
     </div>
