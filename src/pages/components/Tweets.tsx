@@ -84,8 +84,8 @@ function TwitterICU2023() {
       <Button
         component="a"
         className="twitter-timeline"
-        data-height="500"
-        data-width="500"
+        data-height="450"
+        data-width="520"
         data-theme="dark"
         href="https://twitter.com/jsicm50_2023?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3Ajsicm50_2023%7Ctwcon%5Es2"
         target="_blank"
@@ -103,8 +103,8 @@ function TwitterNiseko() {
       <Button
         component="a"
         className="twitter-timeline"
-        data-height="500"
-        data-width="500"
+        data-height="450"
+        data-width="520"
         data-theme="dark"
         href="https://twitter.com/scNISEKOJSICM50"
         target="_blank"
