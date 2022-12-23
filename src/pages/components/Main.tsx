@@ -368,11 +368,16 @@ export default function MainTemp() {
               professionals working in the intensive care field. This is the
               platform that makes it possible.
             </Text>
+            <Text className={classes.description} mt={50} ml={0}>
+              <Text fw={700} fz="lg" td="underline">
+                第50回集中治療学会
+              </Text>
+            </Text>
             <Flex
               direction={{ base: 'column', sm: 'row' }}
               gap={{ base: 'sm', sm: 'lg' }}
               justify={{ sm: 'left' }}
-              mt={40}
+              mt={10}
             >
               <TwitterICU2023 />
               <HomeICU2023 />
@@ -391,11 +396,16 @@ export default function MainTemp() {
               </Text>
               です。
             </Text>
+            <Text className={classes.description} mt={30} ml={0}>
+              <Text fw={700} fz="lg" td="underline">
+                ニセコサマーキャンプ
+              </Text>
+            </Text>
             <Flex
               direction={{ base: 'column', sm: 'row' }}
               gap={{ base: 'sm', sm: 'lg' }}
               justify={{ sm: 'left' }}
-              mt={40}
+              mt={10}
             >
               <TwitterNiseko />
               <InstagramNiseko />
