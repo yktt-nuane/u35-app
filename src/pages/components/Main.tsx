@@ -7,7 +7,13 @@ import {
   Center,
   Flex,
 } from '@mantine/core'
-import { IconBrandTwitter, IconBrandYoutube } from '@tabler/icons'
+import {
+  IconBrandTwitter,
+  IconBrandYoutube,
+  IconBrandInstagram,
+  IconBrandFacebook,
+  IconHome,
+} from '@tabler/icons'
 import { formatDistanceToNowStrict } from 'date-fns'
 import ja from 'date-fns/locale/ja'
 
@@ -86,7 +92,7 @@ const useStyles = createStyles((theme) => ({
 
 function TwitterICU2023() {
   return (
-    <Center pt={20}>
+    <Center pt={10}>
       <Button
         component="a"
         target="_blank"
@@ -118,9 +124,43 @@ function TwitterICU2023() {
   )
 }
 
+function HomeICU2023() {
+  return (
+    <Center pt={10}>
+      <Button
+        component="a"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.jsicm.org/meeting/jsicm50/"
+        leftIcon={<IconHome size={18} />}
+        styles={(theme) => ({
+          root: {
+            backgroundColor: 'white',
+            color: 'black',
+            border: 0,
+            height: 42,
+            paddingLeft: 20,
+            paddingRight: 20,
+
+            '&:hover': {
+              backgroundColor: theme.fn.darken('#00acee', 0.05),
+            },
+          },
+
+          leftIcon: {
+            marginRight: 15,
+          },
+        })}
+      >
+        第50回集中治療学会
+      </Button>
+    </Center>
+  )
+}
+
 function TwitterNiseko() {
   return (
-    <Center pt={20}>
+    <Center pt={10}>
       <Button
         component="a"
         target="_blank"
@@ -152,9 +192,77 @@ function TwitterNiseko() {
   )
 }
 
+function InstagramNiseko() {
+  return (
+    <Center pt={10}>
+      <Button
+        component="a"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.instagram.com/summercampinniseko/"
+        leftIcon={<IconBrandInstagram size={18} />}
+        styles={(theme) => ({
+          root: {
+            backgroundColor: 'white',
+            color: 'black',
+            border: 0,
+            height: 42,
+            paddingLeft: 20,
+            paddingRight: 20,
+
+            '&:hover': {
+              backgroundColor: theme.fn.darken('#00acee', 0.05),
+            },
+          },
+
+          leftIcon: {
+            marginRight: 15,
+          },
+        })}
+      >
+        ニセコサマーキャンプ
+      </Button>
+    </Center>
+  )
+}
+
+function FacebookNiseko() {
+  return (
+    <Center pt={10}>
+      <Button
+        component="a"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.facebook.com/profile.php?id=100088911937589"
+        leftIcon={<IconBrandFacebook size={18} />}
+        styles={(theme) => ({
+          root: {
+            backgroundColor: 'white',
+            color: 'black',
+            border: 0,
+            height: 42,
+            paddingLeft: 20,
+            paddingRight: 20,
+
+            '&:hover': {
+              backgroundColor: theme.fn.darken('#00acee', 0.05),
+            },
+          },
+
+          leftIcon: {
+            marginRight: 15,
+          },
+        })}
+      >
+        ニセコサマーキャンプ
+      </Button>
+    </Center>
+  )
+}
+
 function TwitterDancingER() {
   return (
-    <Center pt={20}>
+    <Center pt={10}>
       <Button
         component="a"
         target="_blank"
@@ -188,7 +296,7 @@ function TwitterDancingER() {
 
 function YouTubeHoshino() {
   return (
-    <Center pt={20}>
+    <Center pt={10}>
       <Button
         component="a"
         target="_blank"
@@ -263,27 +371,60 @@ export default function MainTemp() {
             <Flex
               direction={{ base: 'column', sm: 'row' }}
               gap={{ base: 'sm', sm: 'lg' }}
-              justify={{ sm: 'center' }}
+              justify={{ sm: 'left' }}
               mt={40}
             >
               <TwitterICU2023 />
-              <TwitterNiseko />
+              <HomeICU2023 />
             </Flex>
-            <Text className={classes.description} mt={30} ml={100}>
+            <Text className={classes.description} mt={10} ml={0}>
               第50回集中治療学会は
-              <strong>{JsicmCountDown}</strong>です。
-            </Text>
-            <Text className={classes.description} mt={10} ml={100}>
-              サマーキャンプ in NISEKOは
-              <strong>{NisekoCountDown}</strong>です。
-            </Text>
-            <Text className={classes.description} mt={30} ml={50}>
-              集中治療学会 U-35 メンバー
+              <Text
+                component="span"
+                fw={700}
+                fz="lg"
+                inherit
+                variant="gradient"
+                gradient={{ from: 'yellow', to: 'orange' }}
+              >
+                {JsicmCountDown}
+              </Text>
+              です。
             </Text>
             <Flex
               direction={{ base: 'column', sm: 'row' }}
               gap={{ base: 'sm', sm: 'lg' }}
-              justify={{ sm: 'center' }}
+              justify={{ sm: 'left' }}
+              mt={40}
+            >
+              <TwitterNiseko />
+              <InstagramNiseko />
+              <FacebookNiseko />
+            </Flex>
+
+            <Text className={classes.description} mt={10} ml={0}>
+              サマーキャンプ in NISEKOは
+              <Text
+                component="span"
+                fw={700}
+                fz="lg"
+                inherit
+                variant="gradient"
+                gradient={{ from: 'yellow', to: 'orange' }}
+              >
+                {NisekoCountDown}
+              </Text>
+              です。
+            </Text>
+            <Text className={classes.description} mt={30} ml={0}>
+              <Text fw={700} fz="lg" td="underline">
+                集中治療学会 U-35 メンバー
+              </Text>
+            </Text>
+            <Flex
+              direction={{ base: 'column', sm: 'row' }}
+              gap={{ base: 'sm', sm: 'lg' }}
+              justify={{ sm: 'left' }}
             >
               <TwitterDancingER />
               <YouTubeHoshino />
