@@ -18,14 +18,7 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
-      - name: Install Japanese font
-        uses: awalsh128/cache-apt-pkgs-action@latest
-        with:
-          packages: fonts-noto
-          version: 1.0
-      - name: Install dependencies
-        run: npm install
-      - run: npm run build
+      - name: Use cash
         uses: actions/cache@v3
         with:
           # See here for caching with `yarn` https://github.com/actions/cache/blob/main/examples.md#node---yarn or you can leverage caching with actions/setup-node https://github.com/actions/setup-node
@@ -37,5 +30,13 @@ jobs:
           # If source files changed but packages didn't, rebuild from a prior cache.
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+      - name: Install Japanese font
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: fonts-noto
+          version: 1.0
+      - name: Install dependencies
+        run: npm install
+      - run: npm run build
       - name: Unit test
         run: npm run test:unit
