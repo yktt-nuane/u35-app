@@ -1,6 +1,7 @@
 import { MantineProvider } from '@mantine/core'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
+import { GoogleAnalytics } from 'nextjs-google-analytics'
 
 import '@/styles/globals.css'
 
@@ -27,6 +28,7 @@ export default function App(props: AppProps) {
           colorScheme: 'light',
         }}
       >
+        <GoogleAnalytics trackPageViews />
         <Component {...pageProps} />
       </MantineProvider>
     </>

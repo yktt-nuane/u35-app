@@ -19,6 +19,7 @@
     "date-fns": "^2.29.3",
     "next": "13.0.7",
     "next-axiom": "^0.16.0",
+    "nextjs-google-analytics": "^2.2.2",
     "react": "18.2.0"
   },
   "devDependencies": {
