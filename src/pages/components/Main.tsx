@@ -441,6 +441,38 @@ function YouTubeHoshino() {
   )
 }
 
+function TwitterHoshino() {
+  return (
+    <Center pt={10}>
+      <Button
+        component="a"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://twitter.com/Youtube_Nursing"
+        leftIcon={<IconBrandTwitter size={16} />}
+        styles={(theme) => ({
+          root: {
+            backgroundColor: 'white',
+            color: 'black',
+            border: 0,
+            height: 25,
+            paddingLeft: 15,
+            paddingRight: 0,
+
+            '&:hover': {
+              backgroundColor: theme.fn.darken('#00acee', 0.05),
+            },
+          },
+
+          leftIcon: {
+            marginRight: 15,
+          },
+        })}
+      ></Button>
+    </Center>
+  )
+}
+
 const JsicmDay = new Date(2023, 3, 2)
 const NisekoDay = new Date(2023, 8, 25)
 
@@ -491,7 +523,7 @@ export default function MainTemp() {
             >
               <Text className={classes.description} mt={30} ml={0}>
                 <Text fw={700} fz="lg">
-                  日本集中治療医学会
+                  ▷ 日本集中治療医学会
                 </Text>
               </Text>
               <TwitterICU />
@@ -507,14 +539,13 @@ export default function MainTemp() {
             >
               <Text className={classes.description} mt={10} ml={0}>
                 <Text fw={700} fz="lg">
-                  第50回日本集中治療医学会学術集会
+                  ▷ 第50回日本集中治療医学会学術集会
                   <Text
                     component="span"
                     fw={700}
                     fz="lg"
                     inherit
-                    variant="gradient"
-                    gradient={{ from: 'yellow', to: 'orange' }}
+                    color="yellow"
                   >
                     （{JsicmCountDown}）
                   </Text>
@@ -532,14 +563,13 @@ export default function MainTemp() {
             >
               <Text className={classes.description} mt={10} ml={0}>
                 <Text fw={700} fz="lg">
-                  ニセコサマーキャンプ
+                  ▷ ニセコサマーキャンプ
                   <Text
                     component="span"
                     fw={700}
                     fz="lg"
                     inherit
-                    variant="gradient"
-                    gradient={{ from: 'yellow', to: 'orange' }}
+                    color="yellow"
                   >
                     （{NisekoCountDown}）
                   </Text>
@@ -549,7 +579,7 @@ export default function MainTemp() {
               <FacebookNiseko />
             </Flex>
 
-            <Text className={classes.description} mt={40} ml={0}>
+            <Text className={classes.description} mt={40} ml={20}>
               <Text fw={700} fz="xl" fs="italic">
                 集中治療学会 U-35 メンバー
               </Text>
@@ -560,9 +590,9 @@ export default function MainTemp() {
               gap={{ base: 'sm', sm: 'lg' }}
               justify={{ sm: 'left' }}
             >
-              <Text className={classes.description} mt={15} ml={0}>
+              <Text className={classes.description} mt={15} ml={40}>
                 <Text fw={700} fz="md">
-                  踊る救急医
+                  ▷ 踊る救急医
                 </Text>
               </Text>
               <TwitterDancingER />
@@ -575,12 +605,13 @@ export default function MainTemp() {
               gap={{ base: 'sm', sm: 'lg' }}
               justify={{ sm: 'left' }}
             >
-              <Text className={classes.description} mt={15} ml={0}>
+              <Text className={classes.description} mt={15} ml={40}>
                 <Text fw={700} fz="md">
-                  ハルジローのオンライン看護学院
+                  ▷ ハルジローのオンライン看護学院
                 </Text>
               </Text>
               <YouTubeHoshino />
+              <TwitterHoshino />
             </Flex>
           </div>
         </div>
