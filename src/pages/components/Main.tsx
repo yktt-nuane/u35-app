@@ -363,7 +363,7 @@ export default function MainTemp() {
               が集結する。
             </Title>
 
-            <Text className={classes.description} mt={30}>
+            <Text className={classes.description} mt={20}>
               <Text component="span" fw={700} fz="lg">
                 JICAP
               </Text>{' '}
