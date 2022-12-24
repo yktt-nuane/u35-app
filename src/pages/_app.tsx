@@ -3,6 +3,7 @@ import * as gtag from '@/lib/gtag'
 import '@/styles/globals.css'
 
 import { MantineProvider } from '@mantine/core'
+import { Analytics } from '@vercel/analytics/react'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
@@ -65,6 +66,7 @@ export default function App(props: AppProps) {
           }}
         />
         <Component {...pageProps} />
+        <Analytics />
       </MantineProvider>
     </>
   )
