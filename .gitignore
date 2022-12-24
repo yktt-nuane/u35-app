@@ -36,3 +36,5 @@ yarn-error.log*
 next-env.d.ts
 .gitsecret/keys/random_seed
 !*.secret
+
+Google_Service_Account.json
