@@ -581,7 +581,7 @@ export default function MainTemp() {
 
             <Text className={classes.description} mt={40} ml={20}>
               <Text fw={700} fz="xl" fs="italic">
-                集中治療学会 U-35 メンバー
+                日本集中治療医学会 U-35 メンバー
               </Text>
             </Text>
 
