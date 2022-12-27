@@ -510,7 +510,7 @@ export default function MainTemp() {
 
             <Text className={classes.description} mt={20}>
               <Text component="span" fw={700} fz="lg">
-                JICAP
+                J-ICAP
               </Text>{' '}
               (Japanese Intensive Care Advertising Platform)
             </Text>
