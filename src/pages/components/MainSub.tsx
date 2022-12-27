@@ -90,7 +90,7 @@ export default function MainSub() {
           <div
             style={{ maxWidth: '30%', marginLeft: 'auto', marginRight: 'auto' }}
           >
-            <Image alt="flyer" src="/niseko.png" />
+            <Image alt="flyer" src="niseco.png" />
           </div>
         </Flex>
       </Container>
