@@ -31,11 +31,13 @@ export default function App(props: AppProps) {
   return (
     <>
       <Head>
-        <title>JICAP</title>
+        <title>集中治療医学関連の情報共有サイト</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
+        <meta name="google" content="nositelinkssearchbox" key="sitelinks" />
+        <meta name="google" content="notranslate" key="notranslate" />
       </Head>
 
       <MantineProvider
