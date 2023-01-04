@@ -1,4 +1,11 @@
-import { Container, createStyles, Flex, Image } from '@mantine/core'
+import {
+  Button,
+  Center,
+  Container,
+  createStyles,
+  Flex,
+  Image,
+} from '@mantine/core'
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -81,16 +88,100 @@ export default function MainSub() {
             style={{ maxWidth: '30%', marginLeft: 'auto', marginRight: 'auto' }}
           >
             <Image alt="flyer" src="/50jsicm.jpg" />
+            <Center pt={30}>
+              <Button
+                component="a"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="/50jsicm.pdf"
+                styles={(theme) => ({
+                  root: {
+                    backgroundColor: 'white',
+                    color: 'black',
+                    border: 0,
+                    height: 25,
+                    paddingLeft: 10,
+                    paddingRight: 10,
+
+                    '&:hover': {
+                      backgroundColor: theme.fn.darken('#00acee', 0.05),
+                    },
+                  },
+
+                  leftIcon: {
+                    marginRight: 15,
+                  },
+                })}
+              >
+                download
+              </Button>
+            </Center>
           </div>
           <div
             style={{ maxWidth: '30%', marginLeft: 'auto', marginRight: 'auto' }}
           >
             <Image alt="flyer" src="/u35.png" />
+            <Center pt={30}>
+              <Button
+                component="a"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="/u35.pdf"
+                styles={(theme) => ({
+                  root: {
+                    backgroundColor: 'white',
+                    color: 'black',
+                    border: 0,
+                    height: 25,
+                    paddingLeft: 10,
+                    paddingRight: 10,
+
+                    '&:hover': {
+                      backgroundColor: theme.fn.darken('#00acee', 0.05),
+                    },
+                  },
+
+                  leftIcon: {
+                    marginRight: 15,
+                  },
+                })}
+              >
+                download
+              </Button>
+            </Center>
           </div>
           <div
             style={{ maxWidth: '30%', marginLeft: 'auto', marginRight: 'auto' }}
           >
-            <Image alt="flyer" src="niseco.png" />
+            <Image alt="flyer" src="niseco.png"></Image>
+            <Center pt={30}>
+              <Button
+                component="a"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="/niseco.pdf"
+                styles={(theme) => ({
+                  root: {
+                    backgroundColor: 'white',
+                    color: 'black',
+                    border: 0,
+                    height: 25,
+                    paddingLeft: 10,
+                    paddingRight: 10,
+
+                    '&:hover': {
+                      backgroundColor: theme.fn.darken('#00acee', 0.05),
+                    },
+                  },
+
+                  leftIcon: {
+                    marginRight: 15,
+                  },
+                })}
+              >
+                download
+              </Button>
+            </Center>
           </div>
         </Flex>
       </Container>
