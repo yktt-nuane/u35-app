@@ -473,8 +473,8 @@ function TwitterHoshino() {
   )
 }
 
-const JsicmDay = new Date(2023, 2, 2)
-const NisekoDay = new Date(2023, 7, 25)
+const JsicmDay = new Date('2023-3-2')
+const NisekoDay = new Date('2023-8-25')
 
 const JsicmCountDown = formatDistanceToNowStrict(JsicmDay, {
   addSuffix: true,
