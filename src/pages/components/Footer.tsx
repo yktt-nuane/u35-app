@@ -35,7 +35,16 @@ export default function FooterTemp() {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        <p>© 2022 Tatsuro Yokoyama All rights reserved.</p>
+        <Group spacing="xs" position="left" noWrap>
+          <Link href={'/'}>JICAP</Link>
+          <p>© 2022-2023 Tatsuro Yokoyama All rights reserved.</p>
+        </Group>
+
+        <Group spacing="xs" position="center" noWrap>
+          <Link href={'/privacy'}>
+            <p>プライバシーポリシー・免責事項</p>
+          </Link>
+        </Group>
         <Group spacing={0} className={classes.links} position="right" noWrap>
           <ActionIcon size="lg">
             <Link href="https://twitter.com/yokotatsu75">
